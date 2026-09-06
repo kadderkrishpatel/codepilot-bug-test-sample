@@ -1,10 +1,11 @@
 function getDisplayName(user) {
-  if (!user) return "";
+  if (!user || typeof user !== "object") return "";
   const name = user.nickname || user.name || "";
-  return name.toUpperCase();
+  return String(name).toUpperCase();
 }
 
 function isAdult(age) {
+  if (typeof age !== "number" || Number.isNaN(age)) return false;
   return age >= 18;
 }
 
