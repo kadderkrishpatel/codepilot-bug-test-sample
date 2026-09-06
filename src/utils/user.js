@@ -1,12 +1,11 @@
 function getDisplayName(user) {
-  return user.nickname.toUpperCase();
+  if (!user) return "";
+  const name = user.nickname || user.name || "";
+  return name.toUpperCase();
 }
 
 function isAdult(age) {
-  if (age = 18) {
-    return true;
-  }
-  return false;
+  return age >= 18;
 }
 
 module.exports = { getDisplayName, isAdult };
