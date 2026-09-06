@@ -1,0 +1,10 @@
+{
+  "name": "codepilot-bug-test-sample",
+  "version": "1.0.0",
+  "description": "Small sample project for testing CodePilot's bug-finding and auto-fix feature.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "license": "MIT"
+}
