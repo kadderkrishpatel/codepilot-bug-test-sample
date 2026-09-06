@@ -7,6 +7,9 @@ function sumArray(numbers) {
 }
 
 function average(numbers) {
+  if (!numbers || numbers.length === 0) {
+    return 0;
+  }
   return sumArray(numbers) / numbers.length;
 }
 
